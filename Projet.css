@@ -43,9 +43,9 @@ header nav a:hover {
 .hero button {
   background:skyblue;
   border: 1px solid;
-  padding:13px 25px;
+  padding:12px 25px;
   color: black;
-  font-size: 80px;
+  font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -78,9 +78,9 @@ header nav a:hover {
 .a-propos button {
   background: skyblue;
   border: 1px solid;
-  padding: 13px 25px;
+  padding: 12px 25px;
   color: black;
-  font-size: 80px;
+  font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -109,7 +109,7 @@ header nav a:hover {
 }
 .projet-jeu {
   background:whitesmoke;
-  padding:0 30px;
+  padding:0 10px;
   border-radius: 10px;
   width: 250px;
   text-align: center;
