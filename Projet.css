@@ -91,11 +91,14 @@ header nav a:hover {
 .a-propos h2{
   color: skyblue;
   text-align:center;
-  font-size:28px;
+  font-size:50px;
 }
 .projets {
   padding: 60px 20px;
   text-align: center;
+  display:flex;
+  justify-content:center;
+  gap:20px;
 }
 .projets h2 {
   font-size: 24px;
