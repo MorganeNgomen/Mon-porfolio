@@ -74,6 +74,7 @@ header nav a:hover {
 }
 .a-propos p {
   max-width: 500px;
+  font-size:20px;
 }
 .a-propos button {
   background: skyblue;
@@ -90,6 +91,8 @@ header nav a:hover {
 }
 .a-propos h2{
   color: skyblue;
+  text-align:center;
+  font-size:24px;
 }
 .projets {
   padding: 60px 20px;
