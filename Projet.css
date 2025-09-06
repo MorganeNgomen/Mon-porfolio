@@ -93,7 +93,7 @@ header nav a:hover {
   text-align:center;
 }
 .projets {
-  padding: 50px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 .projets h2 {
@@ -109,7 +109,7 @@ header nav a:hover {
 }
 .projet-jeu {
   background:whitesmoke;
-  padding:0 15px;
+  padding:0 20px;
   border-radius: 10px;
   width: 250px;
   text-align: center;
