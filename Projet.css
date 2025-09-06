@@ -95,9 +95,6 @@ header nav a:hover {
 .projets {
   padding: 60px 20px;
   text-align: center;
-  display:flex;
-  justify-content:center;
-  gap:20px;
 }
 .projets h2 {
   font-size: 24px;
@@ -112,11 +109,14 @@ header nav a:hover {
 }
 .projet-jeu {
   background:whitesmoke;
-  padding: 20px;
+  padding:0 25px;
   border-radius: 10px;
   width: 250px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .projet-jeu button {
   margin-top: 15px;
@@ -192,7 +192,7 @@ header nav a:hover {
   background: #00b3b3;
 }
 .contact label{
-  margin-right:200px;
+  text-align:center
 }
 .logo{
   background-color: black;
