@@ -1,0 +1,172 @@
+<!doctype.html>
+<html>
+  <head>
+    <title>mon porfolio</title>
+    <link rel="stylesheet" href="Projet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Ngomen Beutcha Morgane pavelle</h1>
+      <nav>
+      <a href="index.html">Accueil</a>
+      <a href="#a-propos">A-propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Competences</a>
+      <a href="#contact">Contacts</a>
+      </nav>
+    </header>
+      <section class="hero">
+      <img src="dev.jpg" alt="developpement web">
+       <h2>je suis Morgane pavelle developpeuse en devenir et passionnée par le web et le design!</h2>
+       <a href="#projets">
+      <button>Voir mes projets</button>
+       </a>
+       </section>
+    <section id="a-propos" class="a-propos">
+    <img src="ma photo.jpg" alt="A-propos">
+    <div>
+      <h2>A-propos</h2>
+      <p>Je m'appelle Ngomen Beutcha morgane pavelle passionnée par la creation des sites web modernes et interactifs.</p>
+      Je suis actuellement étudiante en <strong>developpement web</strong>,et je cherche à ameliorer mes competences<strong> javascript,html et css</strong>.
+       J'adore transformer mes idées en projets concrets et experimenter avec les nouvelles technologies.
+       </p>
+       <a href="cv-ngomen.pdf" download>
+      <button>Telecharger mon Cv</button>
+      </a>
+      </div>
+    </section>
+    <section id="projets" class="projets">
+      <h2>Mes projets</h2>
+      <div class="projet-cards"></div>
+      <div class="projet-jeu">mini-site pour la start-up Reveil interieur digital<br>
+     <button>Voir</button>
+      </div>
+   <div class="projet-jeu">jeu du nombre mystere
+     <a href="Projet2.html"><br>
+     <button>Voir</button>
+     </a>
+      </div>
+   <div class="projet-jeu">jeu de Morpion
+     <a href="Projet3.html"><br>
+     <button>Voir</button>
+     </a>
+      </div>
+      </div>
+    </section>
+    <section id="competences" class="competences">
+      <h2>Mes competences</h2>
+      <div class="skills-boxes">
+        <div class="skill-box">
+        <h3>Soft skills</h3>
+          <p>Gestion de projet</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        <p>Developpement d'applications</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        <p>Test et debogage</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-box">
+        <h3>Hard Skills</h3>
+        <p>HTML</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        <p>CSS</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        <p>JavaScript</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+      </div>
+    </div>
+  </section>
+    <section id="contact" class="contact">
+     <h2>Vous avez un projet en tête? </h2>
+     <p>N'hesitez pas à me contacter</p>
+     <form>
+       <label>Votre Prenom:</label>
+        <input type="text" placeholder="Entrez votre prenom" required>
+        <label>Votre Nom:</label>
+      <input type="text" placeholder="Entrez votre nom" required>
+      <label>Votre Email:</label>
+      <input type="email" placeholder="Entrez votre email" required>
+      <label>Votre Message:</label>
+      <textarea rows="5" placeholder="Entrez votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+      <div class="logo">
+      <a href="https://www.linkedin.com/in/morgane-pavelle-ngomen-beutcha-513839324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+    <i class="fab fa-linkedin fa-2x"></i> </a>
+    <a href="https://github.com/MorganeNgomen" target="_blank">
+    <i class="fab fa-github fa-2x"></i>
+    </a>
+   <a href="mailto:morganengomen2@gmail.com" target="_blank">
+   <i class="fas fa-envelope fa-2x"></i>
+   </a>
+</div>
+    </form>
+  </section>
+    <footer>
+      <p>copyright© Tous droits reservés.
+      </p>
+</footer>
+      </footer>
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+const backToTop = document.createElement("button");
+backToTop.innerText = "⬆";
+backToTop.style.position = "fixed";
+backToTop.style.bottom = "20px";
+backToTop.style.right = "20px";
+backToTop.style.padding = "10px 15px";
+backToTop.style.fontSize = "18px";
+backToTop.style.border = "none";
+backToTop.style.borderRadius = "50%";
+backToTop.style.background = "#00CFCF";
+backToTop.style.color = "#fff";
+backToTop.style.cursor = "pointer";
+backToTop.style.display = "none";
+document.body.appendChild(backToTop);
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const form = document.querySelector("form");
+
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const inputs = form.querySelectorAll("input, textarea");
+    let valid = true;
+    inputs.forEach(input => {
+      if (!input.value.trim()) {
+        input.style.border = "2px solid blue";
+        valid = false;
+      } else {
+        input.style.border = "none";
+      }
+    });
+    if (valid) {
+      alert("Merci ! Votre message a bien été envoyé");
+      form.reset();
+    } else {
+      alert("Veuillez remplir tous les champs !");
+    }
+  });
+}
+      </script>
+  </body>
+</html>

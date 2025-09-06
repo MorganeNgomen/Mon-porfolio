@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu du Nombre Mystère</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f5f5f5;
+      padding: 50px;
+    }
+    h1 {
+      color: #00CFCF;
+    }
+    input {
+      padding: 10px;
+      font-size: 18px;
+      width: 100px;
+      text-align: center;
+    }
+    button {
+      background: #00CFCF;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    button:hover {
+      background: #00b3b3;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 Jeu du Nombre Mystère 🎲</h1>
+  <p>Devine le nombre mystère entre 1 et 100 :</p>
+
+  <input type="number" id="guess" min="1" max="100">
+  <button onclick="checkGuess()">Essayer</button>
+
+  <div id="message"></div>
+
+  <script>
+    let mysteryNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+    function checkGuess() {
+      const userGuess = document.getElementById("guess").value;
+      const message = document.getElementById("message");
+      attempts++;
+      if (userGuess == mysteryNumber) {
+        message.innerText = `Bravo ! Vous avez trouvé le nombre ${mysteryNumber} en ${attempts} tentatives.`;
+        message.style.color = "green";
+      } else if (userGuess < mysteryNumber) {
+        message.innerText = "📉 Trop petit ! Essayez encore.";
+        message.style.color = "red";
+      } else if (userGuess > mysteryNumber) {
+        message.innerText = "📈 Trop grand ! Essayez encore.";
+        message.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
