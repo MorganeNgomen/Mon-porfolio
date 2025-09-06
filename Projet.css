@@ -98,7 +98,7 @@ header nav a:hover {
 }
 .projets h2 {
   font-size: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color:skyblue;
 }
 .projet-cards {
@@ -109,7 +109,7 @@ header nav a:hover {
 }
 .projet-jeu {
   background:whitesmoke;
-  padding:0 20px;
+  padding:0 50px;
   border-radius: 10px;
   width: 270px;
   text-align: center;
